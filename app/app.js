@@ -1,13 +1,17 @@
 //DOM ITEMS
-
 const quizName = document.getElementById('quizName')
 const buttonLeft = document.getElementById('buttonLeft')
 const buttonMid = document.getElementById('buttonMid')
 const buttonRight = document.getElementById('buttonRight')
 const hudScoreBoard = document.getElementById('scoreBoard')
 
-//Objects
+//Variables
+let scoreBoard = 0
+let maxQuestions = 3
+let playerQuestion = 1
+let questionIndex = -1
 
+//Object Array
 let quizItems = [
     {
         question: '2 + 2 = X',
@@ -38,13 +42,6 @@ let quizItems = [
         answer: '14'
     },
 ]
-
-//Variables
-let scoreBoard = 0
-let maxQuestions = 3
-let playerQuestion = 1
-let questionIndex = -1
-
 
 //Functions
 const startGame = () =>{
@@ -82,24 +79,29 @@ const isTheEnd = () =>{
     }
 }
 
-const githubEffect = () =>{
-    document.getElementById('githubLogo').src = "./assets/images/github_white.png"
-}
-
-const githubLeaveEffect = () =>{
-    document.getElementById('githubLogo').src = "./assets/images/github_black.png"
-}
-
-const linkedinEffect = () =>{
-    document.getElementById('linkedinLogo').src = "./assets/images/linkedin_white.png"
-}
-
-const linkedinLeaveEffect = () =>{
-    document.getElementById('linkedinLogo').src = "./assets/images/linkedin_black.png"
-}
-
 //Redirect to Game Page
 
 const redirectToGamePage = () => {
     return window.location.replace("./index.html")
+}
+
+//Effect
+
+const hoverEffect = (effect) => {
+    let github = document.getElementById('githubLogo')
+    let linkedin = document.getElementById('linkedinLogo')    
+
+    if (effect == "1"){
+        github.src = "./assets/images/github_white.png"
+    }
+    else{
+        github.src = "./assets/images/github_black.png"
+    }
+
+    if (effect == "2"){
+        linkedin.src = "./assets/images/linkedin_white.png"
+    }
+    else{
+        linkedin.src = "./assets/images/linkedin_black.png"
+    }
 }
