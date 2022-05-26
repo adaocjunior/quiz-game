@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0.1rem 0.2rem #000000;
+}
+
+h2{
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0.1rem 0.2rem #000000;
+}
+
+body{
+    background-color: #4100aa;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.quizButton{
+    width: 6rem;
+    height: 2.5rem;
+    border: 0.2em solid #ffffff;
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: 0.1rem 0.4rem #000000;
+    border-radius: 8%;
+}
+.startPageButtons:hover,
+.quizButton:hover{
+    background-color: #3f3f3f;
+}
+
+.startPageButtons:active,
+.quizButton:active{
+    background-color: #000000;
+    box-shadow: 0 5px #000000;
+    transform: translateY(0.2rem);
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+    box-shadow: 0.5rem 0.3rem #000000;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #222222;
+    box-shadow: 1rem 0rem 0rem 0.5rem #000000 ;
+} 
+
+p{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#footerContent{
+    padding-top: 2rem;
+}
+
+#github,
+#linkedin{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#github:hover,
+#linkedin:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.startPageButtons{
+    width: 15rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 0.2em solid #ffffff;
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: 0.1rem 0.4rem #000000;
+    border-radius: 8%;
+}
+
+#playIcon{
+    padding-left: 0.5rem;
+}
+
+#crownIcon{
+    padding-left: 0.5rem;
+}
