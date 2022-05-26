@@ -63,29 +63,36 @@ const startGame = () =>{
 }
 
 
-function verifyQuestion(value){
+const verifyQuestion = (value) => {
     toString(value)
     if(value === quizItems[questionIndex].answer){
         scoreBoard ++
-
     }
     startGame()
 }
 
-const isTheEnd = () =>{
-    if (questionIndex === 3){
-       // return window.location.replace("./endGameScreen.html")
-        
-    }
-}
-
-//Redirect to Game Page
+//Redirect functions
 
 const redirectToGamePage = () => {
     return window.location.replace("./index.html")
 }
 
-//Effect
+const isTheEnd = () =>{
+    if (questionIndex === 3){
+        return window.location.replace("./endGameScreen.html")
+        
+    }
+}
+
+const redirectToRankingPage = () =>{
+    return window.location.replace("./endGameScreen.html")
+}
+
+const redirectToHomePage = () =>{
+    return window.location.replace("./startScreen.html")
+}
+
+//Effects
 
 const hoverEffect = (effect) => {
     let github = document.getElementById('githubLogo')
